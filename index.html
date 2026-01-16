@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Políticas - Quiron Concursos</title>
+    <title>Quiron Concursos - Políticas e Informações</title>
+    <meta name="description" content="Políticas de Privacidade, Termos de Uso e informações legais do Quiron Concursos">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -19,57 +21,146 @@
             justify-content: center;
             padding: 20px;
         }
+
         .container {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
             max-width: 600px;
             width: 100%;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
-        h1 {
-            color: #667eea;
-            margin-bottom: 30px;
+
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             text-align: center;
-            font-size: 32px;
         }
-        .links {
+
+        .logo {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
         }
-        a {
+
+        .logo-icon {
+            font-size: 48px;
+        }
+
+        .logo-text {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 18px 24px;
+            margin-bottom: 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-decoration: none;
-            padding: 20px;
             border-radius: 12px;
-            text-align: center;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
-        a:hover {
+
+        .button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
         }
+
+        .button-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .button-secondary:hover {
+            box-shadow: 0 10px 30px rgba(240, 147, 251, 0.4);
+        }
+
+        .button-tertiary {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .button-tertiary:hover {
+            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
+        }
+
+        .button-warning {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        .button-warning:hover {
+            box-shadow: 0 10px 30px rgba(250, 112, 154, 0.4);
+        }
+
+        .icon {
+            font-size: 24px;
+        }
+
         .footer {
             margin-top: 40px;
-            text-align: center;
-            color: #666;
+            color: #64748b;
             font-size: 14px;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                padding: 40px 24px;
+            }
+
+            .logo-text {
+                font-size: 24px;
+            }
+
+            .logo-icon {
+                font-size: 36px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🏛️ Quiron Concursos</h1>
-        <div class="links">
-            <a href="/politica.html">📋 Política de Privacidade</a>
-            <a href="/excluir.html">🗑️ Excluir Minha Conta</a>
-        </div>
-        <div class="footer">
-            <p>© 2025 Quiron Concursos</p>
+        <div class="card">
+            <div class="logo">
+                <span class="logo-icon">🏛️</span>
+                <h1 class="logo-text">Quiron Concursos</h1>
+            </div>
+
+            <a href="privacy-policy.html" class="button">
+                <span class="icon">📋</span>
+                Política de Privacidade
+            </a>
+
+            <a href="terms-of-service.html" class="button button-secondary">
+                <span class="icon">📜</span>
+                Termos de Uso
+            </a>
+
+            <a href="ad-partners.html" class="button button-tertiary">
+                <span class="icon">🤝</span>
+                Parceiros de Anúncios
+            </a>
+
+            <a href="delete-account.html" class="button button-warning">
+                <span class="icon">🗑️</span>
+                Excluir Minha Conta
+            </a>
+
+            <div class="footer">
+                © 2025 Quiron Concursos
+            </div>
         </div>
     </div>
 </body>

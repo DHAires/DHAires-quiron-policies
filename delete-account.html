@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Conta - Quiron Concursos</title>
+    <meta name="description" content="Como excluir sua conta do Quiron Concursos de forma permanente">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 3px solid #f59e0b;
+        }
+
+        .logo {
+            font-size: 64px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #ea580c;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #475569;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #475569;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box strong {
+            color: #dc2626;
+        }
+
+        .danger-box {
+            background: #fee2e2;
+            border: 3px solid #dc2626;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 12px;
+        }
+
+        .danger-box h3 {
+            color: #dc2626;
+            margin-top: 0;
+        }
+
+        .info-box {
+            background: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .steps-box {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 12px;
+        }
+
+        .step {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .step:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .step-content h4 {
+            color: #1e293b;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .step-content p {
+            color: #64748b;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        .contact-box {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 12px;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        .contact-box a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .button-danger {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        }
+
+        .button-danger:hover {
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.4);
+        }
+
+        strong {
+            color: #1e293b;
+        }
+
+        .checklist {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .checklist-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .checkbox-icon {
+            font-size: 20px;
+            color: #10b981;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🗑️</div>
+            <h1>Excluir Minha Conta</h1>
+            <p class="subtitle">Quiron Concursos - Direito à Exclusão de Dados</p>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>⚠️ Atenção:</strong> A exclusão de conta é permanente e irreversível. Certifique-se de que realmente deseja prosseguir antes de solicitar a exclusão.</p>
+        </div>
+
+        <h2>📋 O que acontece ao excluir minha conta?</h2>
+
+        <div class="danger-box">
+            <h3>🚨 Dados que serão PERMANENTEMENTE excluídos:</h3>
+            <ul>
+                <li><strong>Informações pessoais:</strong> Nome, e-mail, CPF, telefone, data de nascimento</li>
+                <li><strong>Dados de perfil:</strong> Foto, preferências, configurações</li>
+                <li><strong>Histórico de estudos:</strong> Progresso, estatísticas, respostas</li>
+                <li><strong>Ranking e pontuações:</strong> Posição, pontos, conquistas</li>
+                <li><strong>Chat Prometheus:</strong> Histórico de conversas</li>
+                <li><strong>Assinatura:</strong> Cancelamento imediato (sem reembolso)</li>
+                <li><strong>Compras:</strong> Histórico de transações e produtos virtuais</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <p><strong>ℹ️ Dados mantidos por obrigação legal:</strong></p>
+            <p>Conforme a LGPD e legislação fiscal brasileira, somos obrigados a manter por até 5 anos:</p>
+            <ul>
+                <li>Dados fiscais (para declarações à Receita Federal)</li>
+                <li>Registros de transações financeiras</li>
+                <li>Informações necessárias para cumprimento de obrigações legais</li>
+            </ul>
+            <p>Estes dados ficam armazenados de forma segura e não estão acessíveis ou vinculados ao seu perfil.</p>
+        </div>
+
+        <h2>⏱️ Prazo para Exclusão</h2>
+
+        <p>Processamos solicitações de exclusão em até <strong>30 dias</strong> conforme estabelecido pela LGPD.</p>
+
+        <div class="checklist">
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Imediatamente:</strong> Acesso à conta é bloqueado</span>
+            </div>
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Até 7 dias:</strong> Dados são removidos dos sistemas ativos</span>
+            </div>
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Até 30 dias:</strong> Dados são completamente excluídos dos backups</span>
+            </div>
+        </div>
+
+        <h2>🔄 Como Excluir Minha Conta</h2>
+
+        <h3>Opção 1: Pelo Aplicativo (Recomendado)</h3>
+
+        <div class="steps-box">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Abra o Menu</h4>
+                    <p>No app Quiron Concursos, toque no ícone do menu (☰) no canto superior</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Acesse Configurações</h4>
+                    <p>Selecione "Configurações" → "Conta e Privacidade"</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Solicite a Exclusão</h4>
+                    <p>Role até o final e toque em "Excluir Minha Conta"</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Confirme sua Identidade</h4>
+                    <p>Digite sua senha para confirmar que é você</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h4>Confirmação Final</h4>
+                    <p>Leia o aviso e confirme a exclusão permanente</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h4>Receba Confirmação</h4>
+                    <p>Você receberá um e-mail confirmando o processamento da solicitação</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Opção 2: Por E-mail</h3>
+
+        <div class="info-box">
+            <p>Envie um e-mail para <strong>quironconcursos@gmail.com</strong> com:</p>
+            <ul>
+                <li><strong>Assunto:</strong> Solicitação de Exclusão de Conta - LGPD</li>
+                <li><strong>E-mail cadastrado:</strong> O e-mail usado na sua conta</li>
+                <li><strong>Nome completo:</strong> Conforme cadastro</li>
+                <li><strong>CPF:</strong> Para confirmação de identidade</li>
+                <li><strong>Motivo:</strong> (Opcional) Nos ajuda a melhorar</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>⚠️ Verificação de Identidade:</strong> Para sua segurança, podemos solicitar informações adicionais para confirmar que você é o titular da conta.</p>
+        </div>
+
+        <h2>❓ Antes de Excluir - Considere Estas Alternativas</h2>
+
+        <h3>🔒 Suspender Temporariamente</h3>
+        <p>Se você não tem certeza, pode <strong>desativar sua conta temporariamente</strong> ao invés de excluí-la:</p>
+        <ul>
+            <li>Seus dados ficam preservados</li>
+            <li>Você pode reativar a qualquer momento</li>
+            <li>Assinatura é pausada (sem cobranças)</li>
+        </ul>
+
+        <h3>📧 Cancelar Apenas Assinatura</h3>
+        <p>Se o problema é financeiro, você pode:</p>
+        <ul>
+            <li>Cancelar o plano Premium e continuar no Freemium</li>
+            <li>Manter acesso a conteúdo básico gratuitamente</li>
+            <li>Reativar Premium quando quiser</li>
+        </ul>
+
+        <h3>⚙️ Ajustar Configurações de Privacidade</h3>
+        <p>Talvez você só precise ajustar suas preferências:</p>
+        <ul>
+            <li>Desativar notificações</li>
+            <li>Controlar quais dados compartilhamos</li>
+            <li>Optar por não receber e-mails de marketing</li>
+        </ul>
+
+        <h2>🔐 Seus Direitos (LGPD)</h2>
+
+        <p>De acordo com a Lei Geral de Proteção de Dados, você tem direito a:</p>
+
+        <div class="checklist">
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Confirmação:</strong> Saber se processamos seus dados</span>
+            </div>
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Acesso:</strong> Obter cópia de todos os seus dados</span>
+            </div>
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Correção:</strong> Atualizar dados incompletos ou incorretos</span>
+            </div>
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Anonimização:</strong> Tornar dados não identificáveis</span>
+            </div>
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Portabilidade:</strong> Transferir dados para outro serviço</span>
+            </div>
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Exclusão:</strong> Remover permanentemente seus dados</span>
+            </div>
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Oposição:</strong> Opor-se a certos tratamentos de dados</span>
+            </div>
+            <div class="checklist-item">
+                <span class="checkbox-icon">✓</span>
+                <span><strong>Revogação:</strong> Retirar consentimento a qualquer momento</span>
+            </div>
+        </div>
+
+        <h2>📞 Precisa de Ajuda?</h2>
+
+        <p>Se você tem dúvidas sobre exclusão de conta ou precisa de assistência:</p>
+
+        <div class="contact-box">
+            <h3>Entre em Contato</h3>
+            <p><strong>E-mail de Privacidade (LGPD):</strong><br>
+            <a href="mailto:quironconcursos@gmail.com">quironconcursos@gmail.com</a></p>
+            
+            <p><strong>Encarregado de Dados (DPO):</strong><br>
+            <a href="mailto:quironconcursos@gmail.com">quironconcursos@gmail.com</a></p>
+            
+            <p><strong>Suporte Geral:</strong><br>
+            <a href="mailto:quironconcursos@gmail.com">quironconcursos@gmail.com</a></p>
+
+            <p style="margin-top: 20px; color: #64748b; font-size: 14px;">
+                <strong>Prazo de resposta:</strong> Até 15 dias úteis conforme LGPD
+            </p>
+        </div>
+
+        <h2>📄 Documentos Relacionados</h2>
+
+        <p>Para mais informações sobre como tratamos seus dados:</p>
+        <ul>
+            <li><a href="privacy-policy.html">📋 Política de Privacidade</a></li>
+            <li><a href="terms-of-service.html">📜 Termos de Uso</a></li>
+            <li><a href="ad-partners.html">🤝 Parceiros de Anúncios</a></li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="index.html" class="button">← Voltar ao Menu Principal</a>
+        </div>
+
+        <div style="margin-top: 30px; padding-top: 30px; border-top: 2px solid #e2e8f0; text-align: center; color: #64748b; font-size: 14px;">
+            <p><strong>Quiron Concursos</strong> - Comprometidos com sua privacidade</p>
+            <p>© 2025 Quiron Concursos. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>

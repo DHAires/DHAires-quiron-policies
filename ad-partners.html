@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parceiros de Anúncios - Quiron Concursos</title>
+    <meta name="description" content="Informações sobre nossos parceiros de publicidade e como gerenciar suas preferências de anúncios">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 3px solid #3b82f6;
+        }
+
+        .logo {
+            font-size: 64px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #3b82f6;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0ea5e9;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #475569;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #475569;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #475569;
+        }
+
+        .info-box {
+            background: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #4facfe15 0%, #00f2fe15 100%);
+            border-left: 4px solid #0ea5e9;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .partner-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .partner-card h3 {
+            color: #1e293b;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .partner-logo {
+            font-size: 32px;
+        }
+
+        .data-collected {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .data-collected h4 {
+            color: #92400e;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-collected ul {
+            margin: 0;
+        }
+
+        .control-box {
+            background: #dcfce7;
+            border: 2px solid #16a34a;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .control-box h3 {
+            color: #166534;
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 10px 10px 10px 0;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+        }
+
+        .button-secondary {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .button-secondary:hover {
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+        }
+
+        .contact-box {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 12px;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        .contact-box a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #1e293b;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .feature-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .feature-card .icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h4 {
+            color: #1e293b;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🤝</div>
+            <h1>Parceiros de Anúncios</h1>
+            <p class="subtitle">Transparência sobre publicidade no Quiron Concursos</p>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>💡 Por que exibimos anúncios?</strong></p>
+            <p>Anúncios nos permitem oferecer conteúdo gratuito de qualidade para milhões de estudantes. Usuários Premium têm acesso sem anúncios por R$ 29,90/mês.</p>
+        </div>
+
+        <h2>📱 Plataforma de Publicidade</h2>
+
+        <div class="partner-card">
+            <h3>
+                <span class="partner-logo">🔵</span>
+                Google AdMob
+            </h3>
+            <p><strong>Parceiro principal de publicidade</strong></p>
+            <p>O Google AdMob é a plataforma que utilizamos para exibir anúncios relevantes no aplicativo. É a solução de publicidade móvel do Google, usada por milhões de aplicativos em todo o mundo.</p>
+
+            <div class="data-collected">
+                <h4>📊 Dados Coletados pelo AdMob</h4>
+                <ul>
+                    <li><strong>Identificadores de Dispositivo:</strong> ID de publicidade (GAID/IDFA)</li>
+                    <li><strong>Informações de Uso:</strong> Interações com anúncios, cliques, visualizações</li>
+                    <li><strong>Localização Aproximada:</strong> Baseada em endereço IP (cidade/estado)</li>
+                    <li><strong>Características do Dispositivo:</strong> Modelo, SO, versão do app</li>
+                    <li><strong>Dados Demográficos:</strong> Idade estimada, interesses gerais</li>
+                    <li><strong>Conexão:</strong> Tipo de rede (WiFi/móvel), operadora</li>
+                </ul>
+            </div>
+
+            <p><strong>Como o Google usa esses dados:</strong></p>
+            <ul>
+                <li>Exibir anúncios relevantes aos seus interesses</li>
+                <li>Medir eficácia das campanhas publicitárias</li>
+                <li>Prevenir fraudes e cliques inválidos</li>
+                <li>Melhorar produtos e serviços</li>
+            </ul>
+
+            <p><strong>Políticas oficiais do Google:</strong></p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a></li>
+                <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank">Como o Google usa dados de sites/apps parceiros</a></li>
+                <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">Privacidade e Mensagens do Google AdMob</a></li>
+            </ul>
+        </div>
+
+        <h2>🎯 Tipos de Anúncios</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">🖼️</div>
+                <h4>Banners</h4>
+                <p>Anúncios fixos que aparecem em partes da tela sem interromper a experiência</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">📺</div>
+                <h4>Intersticiais</h4>
+                <p>Anúncios em tela cheia exibidos entre atividades ou níveis</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🎬</div>
+                <h4>Vídeos com Recompensa</h4>
+                <p>Assista a um vídeo e ganhe pontos, energia ou benefícios extras</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">📰</div>
+                <h4>Nativos</h4>
+                <p>Anúncios integrados ao design do app para experiência mais fluida</p>
+            </div>
+        </div>
+
+        <h2>🔐 Segurança e Privacidade</h2>
+
+        <h3>✅ O que o Google AdMob NÃO faz:</h3>
+        <ul>
+            <li>❌ Não coleta GPS exato (apenas cidade/estado)</li>
+            <li>❌ Não acessa seus contatos ou SMS</li>
+            <li>❌ Não lê suas mensagens privadas no app</li>
+            <li>❌ Não acessa fotos ou arquivos pessoais</li>
+            <li>❌ Não grava áudio ou vídeo sem permissão</li>
+        </ul>
+
+        <h3>✅ Conformidade Legal:</h3>
+        <div class="info-box">
+            <p>O Google AdMob está em conformidade com:</p>
+            <ul>
+                <li><strong>LGPD</strong> (Lei Geral de Proteção de Dados - Brasil)</li>
+                <li><strong>GDPR</strong> (General Data Protection Regulation - Europa)</li>
+                <li><strong>COPPA</strong> (Children's Online Privacy Protection Act - EUA)</li>
+                <li><strong>CCPA</strong> (California Consumer Privacy Act - Califórnia/EUA)</li>
+            </ul>
+        </div>
+
+        <h2>⚙️ Controle Suas Preferências de Anúncios</h2>
+
+        <div class="control-box">
+            <h3>🛠️ Como Gerenciar Anúncios Personalizados</h3>
+            
+            <h4>No Dispositivo Android:</h4>
+            <ol>
+                <li>Abra <strong>Configurações</strong> do dispositivo</li>
+                <li>Vá em <strong>Google</strong> → <strong>Anúncios</strong></li>
+                <li>Ative a opção <strong>"Desativar personalização de anúncios"</strong></li>
+                <li>Ou toque em <strong>"Redefinir ID de publicidade"</strong> para começar do zero</li>
+            </ol>
+
+            <h4>No Dispositivo iOS:</h4>
+            <ol>
+                <li>Abra <strong>Ajustes</strong></li>
+                <li>Vá em <strong>Privacidade</strong> → <strong>Rastreamento</strong></li>
+                <li>Desative <strong>"Permitir Solicitações de Rastreamento de Apps"</strong></li>
+            </ol>
+
+            <h4>Nas Configurações do Google:</h4>
+            <ol>
+                <li>Acesse: <a href="https://adssettings.google.com" target="_blank">adssettings.google.com</a></li>
+                <li>Faça login com sua conta Google</li>
+                <li>Gerencie suas preferências de anúncios</li>
+                <li>Desative a personalização se preferir</li>
+            </ol>
+
+            <a href="https://adssettings.google.com" target="_blank" class="button">Configurar Anúncios do Google</a>
+            <a href="https://myadcenter.google.com" target="_blank" class="button button-secondary">Meu Centro de Anúncios</a>
+        </div>
+
+        <div class="info-box">
+            <p><strong>⚠️ Importante:</strong> Desativar anúncios personalizados não significa que você verá menos anúncios, mas sim que eles serão menos relevantes aos seus interesses.</p>
+        </div>
+
+        <h2>🚫 Como Remover Anúncios Completamente</h2>
+
+        <div class="highlight-box">
+            <h3>✨ Assine o Plano Premium</h3>
+            <p>A única forma de remover completamente os anúncios é assinando o plano <strong>Quiron Premium</strong>:</p>
+            <ul>
+                <li>💰 <strong>R$ 29,90/mês</strong> ou <strong>R$ 299,00/ano</strong></li>
+                <li>🚫 <strong>Sem anúncios</strong></li>
+                <li>🔓 <strong>Acesso total</strong> a todo conteúdo</li>
+                <li>🤖 <strong>Chat Prometheus ilimitado</strong></li>
+                <li>🏆 <strong>Competições com premiação</strong></li>
+                <li>🎮 <strong>Game "A Corrida dos Heróis"</strong></li>
+            </ul>
+        </div>
+
+        <h2>📊 Dados Compartilhados com Anunciantes</h2>
+
+        <h3>❌ NÃO Compartilhamos:</h3>
+        <ul>
+            <li>Seu nome completo</li>
+            <li>Seu e-mail</li>
+            <li>Seu CPF</li>
+            <li>Seu telefone</li>
+            <li>Seu endereço</li>
+            <li>Mensagens privadas ou histórico do chat</li>
+            <li>Respostas específicas a questões</li>
+        </ul>
+
+        <h3>✅ Compartilhamos (de forma anônima):</h3>
+        <ul>
+            <li>Faixa etária aproximada</li>
+            <li>Localização geral (cidade/estado)</li>
+            <li>Interesses gerais (ex: "educação", "concursos")</li>
+            <li>Tipo de dispositivo e sistema operacional</li>
+            <li>Interações com anúncios (cliques, visualizações)</li>
+        </ul>
+
+        <h2>🌍 Outros Parceiros</h2>
+
+        <p>Além do Google AdMob, podemos trabalhar com:</p>
+
+        <div class="partner-card">
+            <h3>📊 Google Analytics</h3>
+            <p>Para análise de uso do aplicativo e melhorias na experiência do usuário.</p>
+            <p><a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade</a></p>
+        </div>
+
+        <div class="partner-card">
+            <h3>🔥 Firebase (Google)</h3>
+            <p>Para autenticação, banco de dados e notificações push.</p>
+            <p><a href="https://firebase.google.com/support/privacy" target="_blank">Política de Privacidade</a></p>
+        </div>
+
+        <div class="info-box">
+            <p><strong>ℹ️ Nota:</strong> Todos os parceiros são empresas reconhecidas mundialmente e seguem rigorosos padrões de segurança e privacidade.</p>
+        </div>
+
+        <h2>🛡️ Seus Direitos</h2>
+
+        <p>De acordo com a LGPD e GDPR, você tem direito a:</p>
+
+        <ul>
+            <li>✓ <strong>Saber</strong> quais dados são coletados</li>
+            <li>✓ <strong>Acessar</strong> seus dados pessoais</li>
+            <li>✓ <strong>Corrigir</strong> informações incorretas</li>
+            <li>✓ <strong>Excluir</strong> seus dados (direito ao esquecimento)</li>
+            <li>✓ <strong>Opor-se</strong> ao processamento de certos dados</li>
+            <li>✓ <strong>Revogar</strong> consentimento a qualquer momento</li>
+            <li>✓ <strong>Portabilidade</strong> de dados para outro serviço</li>
+        </ul>
+
+        <p>Para exercer qualquer um desses direitos, entre em contato: <strong>quironconcursos@gmail.com</strong></p>
+
+        <h2>📞 Dúvidas sobre Publicidade?</h2>
+
+        <div class="contact-box">
+            <h3>Entre em Contato</h3>
+            <p><strong>E-mail de Privacidade:</strong><br>
+            <a href="mailto:quironconcursos@gmail.com">quironconcursos@gmail.com</a></p>
+            
+            <p><strong>Encarregado de Dados (DPO):</strong><br>
+            <a href="mailto:quironconcursos@gmail.com">quironconcursos@gmail.com</a></p>
+            
+            <p><strong>Suporte Geral:</strong><br>
+            <a href="mailto:quironconcursos@gmail.com">quironconcursos@gmail.com</a></p>
+        </div>
+
+        <h2>📄 Documentos Relacionados</h2>
+
+        <p>Para mais informações, consulte:</p>
+        <ul>
+            <li><a href="privacy-policy.html">📋 Política de Privacidade do Quiron Concursos</a></li>
+            <li><a href="terms-of-service.html">📜 Termos de Uso</a></li>
+            <li><a href="delete-account.html">🗑️ Como Excluir Minha Conta</a></li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="index.html" class="button">← Voltar ao Menu Principal</a>
+        </div>
+
+        <div style="margin-top: 30px; padding-top: 30px; border-top: 2px solid #e2e8f0; text-align: center; color: #64748b; font-size: 14px;">
+            <p><strong>Quiron Concursos</strong> - Publicidade responsável e transparente</p>
+            <p>© 2025 Quiron Concursos. Todos os direitos reservados.</p>
+            <p style="margin-top: 10px;">Última atualização: 16 de Janeiro de 2026</p>
+        </div>
+    </div>
+</body>
+</html>
