@@ -99,6 +99,20 @@
             border-radius: 8px;
         }
 
+        .premium-box {
+            background: linear-gradient(135deg, #ffd70015 0%, #ff850015 100%);
+            border: 3px solid #ffd700;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 12px;
+        }
+
+        .premium-box h3 {
+            margin-top: 0;
+            color: #ff8500;
+            font-size: 22px;
+        }
+
         .contact-box {
             background: #f8fafc;
             border: 2px solid #e2e8f0;
@@ -161,6 +175,16 @@
             font-weight: 600;
         }
 
+        .price-tag {
+            background: linear-gradient(135deg, #ffd700 0%, #ff8500 100%);
+            color: white;
+            padding: 3px 12px;
+            border-radius: 6px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 30px 20px;
@@ -183,7 +207,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">📜</div>
+            <div class="logo">🏛️</div>
             <h1>Termos de Uso</h1>
             <p class="last-updated"><strong>Última atualização:</strong> 16 de Janeiro de 2026</p>
         </div>
@@ -194,7 +218,7 @@
 
         <h2>1. Aceitação dos Termos</h2>
 
-        <p>Ao criar uma conta, acessar ou usar o aplicativo Quiron Concursos, você concorda em cumprir e ficar vinculado a estes Termos de Uso e nossa <a href="privacy-policy.html">Política de Privacidade</a>.</p>
+        <p>Ao criar uma conta, acessar ou usar o aplicativo Quiron Concursos, você concorda em cumprir e ficar vinculado a estes Termos de Uso e nossa <a href="privacy-policy">Política de Privacidade</a>.</p>
 
         <p>Se você não concorda com qualquer parte destes termos, não deve usar nossos serviços.</p>
 
@@ -231,79 +255,202 @@
             <p><strong>⚠️ Importante:</strong> Contas com informações falsas ou fraudulentas podem ser suspensas ou encerradas sem aviso prévio.</p>
         </div>
 
-        <h2>4. Planos e Assinaturas</h2>
+        <h2>4. Planos de Serviço</h2>
 
-        <p>Oferecemos três tipos de planos:</p>
+        <p>Oferecemos três tipos de planos para atender diferentes necessidades:</p>
 
         <table>
             <thead>
                 <tr>
                     <th>Plano</th>
                     <th>Preço</th>
-                    <th>Benefícios</th>
+                    <th>Características</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Visitante</strong></td>
-                    <td>Grátis</td>
+                    <td><strong>🌟 Visitante</strong></td>
+                    <td><span style="color: #10b981; font-weight: 700;">GRÁTIS</span></td>
                     <td>
-                        • Acesso limitado ao conteúdo<br>
-                        • Compra de produtos físicos<br>
-                        • Sem necessidade de cadastro
+                        • Acesso básico ao conteúdo<br>
+                        • Visualização de questões limitadas<br>
+                        • Sem necessidade de cadastro<br>
+                        • Anúncios presentes
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Freemium</strong></td>
-                    <td>Grátis (com cadastro)</td>
+                    <td><strong>🎯 Freemium</strong></td>
+                    <td><span style="color: #10b981; font-weight: 700;">GRÁTIS</span><br>(com cadastro)</td>
                     <td>
-                        • Acesso a mais conteúdo<br>
-                        • Compra de produtos físicos e virtuais<br>
-                        • Chat Prometheus limitado<br>
-                        • Ranking e competições
+                        • Acesso ampliado ao conteúdo<br>
+                        • Sistema de ranking<br>
+                        • Chat Prometheus (5 mensagens/dia)<br>
+                        • Histórico de progresso<br>
+                        • Anúncios presentes
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Premium</strong></td>
-                    <td>R$ 29,90/mês ou R$ 299,00/ano</td>
+                    <td><strong>💎 Premium</strong></td>
                     <td>
-                        • Acesso total ao conteúdo<br>
-                        • Todos os produtos da loja<br>
-                        • Chat Prometheus ilimitado<br>
-                        • Participação em competições com premiação<br>
+                        <span class="price-tag">R$ 29,90/mês</span>
+                    </td>
+                    <td>
+                        • <strong>Sem anúncios</strong><br>
+                        • Acesso ilimitado a todas questões<br>
+                        • Chat Prometheus <strong>ILIMITADO</strong><br>
+                        • Análise detalhada da IA<br>
                         • Acesso ao game "A Corrida dos Heróis"<br>
-                        • Sem anúncios
+                        • Competições com premiação<br>
+                        • Conteúdo exclusivo Premium
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <h3>4.1. Renovação Automática</h3>
-        <p>Assinaturas Premium são renovadas automaticamente até que você cancele. Você será cobrado no início de cada período de cobrança.</p>
+        <div class="premium-box">
+            <h3>💎 Sobre a Assinatura Premium</h3>
+            <p><strong>Preço:</strong> <span class="price-tag">R$ 29,90 por mês</span></p>
+            <p><strong>Forma de Pagamento:</strong> Google Play Store (cartão de crédito, débito ou saldo Google Play)</p>
+            <p><strong>Cobrança:</strong> Mensal, no mesmo dia em que você assinou</p>
+            <p><strong>Início dos Benefícios:</strong> Imediato após confirmação do pagamento</p>
+        </div>
 
-        <h3>4.2. Cancelamento</h3>
-        <p>Você pode cancelar sua assinatura a qualquer momento através de:</p>
+        <h2>5. Assinatura Premium - Termos Detalhados</h2>
+
+        <h3>5.1. Renovação Automática</h3>
+        <p>A assinatura Premium é <strong>renovada automaticamente</strong> todo mês até que você cancele.</p>
         <ul>
-            <li>Configurações da conta no aplicativo</li>
-            <li>Google Play Store (gerenciar assinaturas)</li>
-            <li>Contato com nosso suporte: <a href="mailto:suporte@quironconcursos.com.br">suporte@quironconcursos.com.br</a></li>
+            <li>A cobrança ocorre no mesmo dia do mês em que você assinou</li>
+            <li>Você será cobrado pelo Google Play Store automaticamente</li>
+            <li>Receba notificação 24 horas antes da renovação</li>
+            <li>O valor pode ser reajustado (veja seção 5.6)</li>
         </ul>
 
-        <p>O cancelamento entra em vigor no final do período de cobrança atual. Não há reembolsos proporcionais.</p>
+        <h3>5.2. Como Cancelar sua Assinatura</h3>
+        <p>Você pode cancelar a qualquer momento através de:</p>
 
-        <h3>4.3. Política de Reembolso</h3>
-        <p>Reembolsos são concedidos apenas em casos específicos:</p>
+        <ol>
+            <li>
+                <strong>Pelo Aplicativo Quiron Concursos:</strong>
+                <ul>
+                    <li>Abra o app → Menu lateral → Perfil</li>
+                    <li>Configurações → Assinatura Premium</li>
+                    <li>Clique em "Cancelar Premium"</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Pela Google Play Store:</strong>
+                <ul>
+                    <li>Abra a Google Play Store</li>
+                    <li>Menu → Assinaturas</li>
+                    <li>Selecione "Quiron Concursos"</li>
+                    <li>Clique em "Cancelar assinatura"</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Por E-mail:</strong>
+                <ul>
+                    <li>Envie para: <a href="mailto:quironconcursos@gmail.com">quironconcursos@gmail.com</a></li>
+                    <li>Assunto: "Cancelamento de Assinatura"</li>
+                    <li>Inclua: seu e-mail de cadastro e CPF</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>5.3. Política de Cancelamento e Reembolso</h3>
+
+        <div class="warning-box">
+            <p><strong>⚠️ Importante - Período de Garantia de 72 Horas:</strong></p>
+            <p>Você tem até <strong>72 horas (3 dias)</strong> após a primeira compra para solicitar reembolso total.</p>
+        </div>
+
+        <p><strong>Reembolso dentro de 72 horas:</strong></p>
         <ul>
-            <li>Cobrança duplicada por erro técnico</li>
-            <li>Problemas técnicos que impedem o uso do serviço por mais de 7 dias consecutivos</li>
-            <li>Dentro de 7 dias da primeira compra (aplicável apenas à primeira assinatura)</li>
+            <li>✅ Reembolso <strong>100% do valor pago</strong></li>
+            <li>✅ Reembolso <strong>proporcional</strong> se já usou alguns dias</li>
+            <li>✅ Processamento em até 7 dias úteis</li>
+            <li>✅ Crédito via Google Play Store</li>
         </ul>
 
-        <p>Solicitações de reembolso devem ser enviadas para: <a href="mailto:financeiro@quironconcursos.com.br">financeiro@quironconcursos.com.br</a></p>
+        <p><strong>Após 72 horas:</strong></p>
+        <ul>
+            <li>❌ Não há reembolso por cancelamento voluntário</li>
+            <li>✅ Você mantém acesso até o fim do período pago</li>
+            <li>✅ Não há cobrança no próximo mês</li>
+        </ul>
 
-        <h2>5. Uso Aceitável</h2>
+        <p><strong>Exceções para Reembolso (a qualquer momento):</strong></p>
+        <ul>
+            <li>🔧 Cobrança duplicada por erro técnico</li>
+            <li>🚫 Falha técnica que impede uso por mais de 7 dias consecutivos</li>
+            <li>⚠️ Cobrança não autorizada (fraude)</li>
+        </ul>
 
-        <p>Ao usar o Quiron Concursos, você concorda em NÃO:</p>
+        <h3>5.4. Efeitos do Cancelamento</h3>
+        <p>Quando você cancela a assinatura Premium:</p>
+        <ul>
+            <li>✅ Você mantém acesso Premium até o final do período já pago</li>
+            <li>❌ Não há cobrança no próximo mês</li>
+            <li>📉 Após expirar, você volta para o plano Freemium automaticamente</li>
+            <li>💾 Seu histórico e progresso são mantidos</li>
+            <li>📺 Anúncios voltam a aparecer</li>
+            <li>🔒 Funcionalidades exclusivas Premium ficam bloqueadas</li>
+        </ul>
+
+        <h3>5.5. Mudança de Forma de Pagamento</h3>
+        <p>Para alterar seu método de pagamento:</p>
+        <ol>
+            <li>Acesse as configurações da Google Play Store</li>
+            <li>Vá em "Formas de Pagamento"</li>
+            <li>Adicione ou remova cartões</li>
+            <li>A próxima cobrança usará o método atualizado</li>
+        </ol>
+
+        <h3>5.6. Reajuste de Preços</h3>
+        <p>Reservamo-nos o direito de reajustar o valor da assinatura Premium:</p>
+        <ul>
+            <li>📅 <strong>Primeiro reajuste:</strong> A partir de Agosto de 2026</li>
+            <li>📢 <strong>Aviso antecipado:</strong> Você será notificado com 30 dias de antecedência</li>
+            <li>📧 <strong>Notificação:</strong> Via e-mail, notificação no app e Google Play</li>
+            <li>✅ <strong>Direito de cancelar:</strong> Você pode cancelar sem multa antes do reajuste</li>
+            <li>💡 <strong>Assinantes atuais:</strong> Preço atual mantido até a data de reajuste</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>📌 Exemplo de Reajuste:</strong></p>
+            <p>Se você assinou em Janeiro/2026 por R$ 29,90/mês, você manterá este valor até Agosto/2026. A partir de Setembro/2026, o novo preço entrará em vigor (se houver reajuste).</p>
+        </div>
+
+        <h3>5.7. Problemas com Pagamento</h3>
+        <p>Se houver falha no pagamento da renovação:</p>
+        <ol>
+            <li>🔔 Você recebe notificação imediata</li>
+            <li>⏳ Temos 3 tentativas de cobrança em 7 dias</li>
+            <li>🔓 Seu acesso Premium fica ativo durante este período</li>
+            <li>❌ Após 7 dias sem sucesso, assinatura é cancelada automaticamente</li>
+            <li>📧 Você recebe e-mail explicando como resolver</li>
+        </ol>
+
+        <h2>6. Publicidade e Anúncios</h2>
+
+        <h3>6.1. Planos com Anúncios</h3>
+        <p>Os planos <strong>Visitante</strong> e <strong>Freemium</strong> exibem anúncios fornecidos por:</p>
+        <ul>
+            <li>🟢 Google AdMob</li>
+            <li>🔵 Meta Audience Network (Facebook/Instagram)</li>
+        </ul>
+
+        <p>Para mais informações sobre nossos parceiros de anúncios, consulte: <a href="ad-partners">Parceiros de Anúncios</a></p>
+
+        <h3>6.2. Remoção de Anúncios</h3>
+        <p>Usuários <strong>Premium</strong> têm experiência 100% sem anúncios.</p>
+
+        <h3>6.3. Interação com Anúncios</h3>
+        <p>Ao clicar em anúncios, você pode ser redirecionado para sites de terceiros. Não somos responsáveis pelo conteúdo ou práticas de privacidade desses sites.</p>
+
+        <h2>7. Uso Aceitável do Serviço</h2>
+
+        <p>Ao usar o Quiron Concursos, você concorda em <strong>NÃO</strong>:</p>
 
         <ul>
             <li>❌ Usar o serviço para qualquer propósito ilegal ou não autorizado</li>
@@ -317,88 +464,80 @@
             <li>❌ Publicar conteúdo ofensivo, discriminatório ou inadequado</li>
             <li>❌ Burlar ou tentar burlar medidas de segurança</li>
             <li>❌ Criar múltiplas contas para abuso de promoções</li>
+            <li>❌ Solicitar reembolsos fraudulentos</li>
         </ul>
 
         <div class="warning-box">
-            <p><strong>⚠️ Consequências:</strong> Violações destes termos podem resultar em suspensão ou encerramento permanente da conta, sem reembolso.</p>
+            <p><strong>⚠️ Consequências:</strong> Violações destes termos podem resultar em:</p>
+            <ul>
+                <li>🔴 Suspensão temporária da conta</li>
+                <li>🚫 Banimento permanente sem reembolso</li>
+                <li>⚖️ Ação judicial por danos causados</li>
+            </ul>
         </div>
 
-        <h2>6. Conteúdo do Usuário</h2>
+        <h2>8. Conteúdo do Usuário</h2>
 
-        <h3>6.1. Propriedade do Conteúdo</h3>
+        <h3>8.1. Propriedade do Conteúdo</h3>
         <p>Você mantém todos os direitos sobre o conteúdo que cria ou envia (ex: mensagens no chat, respostas em fóruns).</p>
 
         <p>Ao enviar conteúdo, você nos concede uma licença mundial, não exclusiva, isenta de royalties para usar, reproduzir, modificar e exibir esse conteúdo no contexto do serviço.</p>
 
-        <h3>6.2. Responsabilidade pelo Conteúdo</h3>
+        <h3>8.2. Responsabilidade pelo Conteúdo</h3>
         <p>Você é o único responsável pelo conteúdo que compartilha. Não nos responsabilizamos por conteúdo de terceiros.</p>
 
-        <h3>6.3. Moderação</h3>
+        <h3>8.3. Moderação</h3>
         <p>Reservamo-nos o direito de remover qualquer conteúdo que viole estes termos, sem aviso prévio.</p>
 
-        <h2>7. Propriedade Intelectual</h2>
+        <h2>9. Propriedade Intelectual</h2>
 
         <p>Todo o conteúdo do Quiron Concursos, incluindo:</p>
         <ul>
-            <li>Textos, questões e material educacional</li>
-            <li>Logotipos, marcas e design</li>
-            <li>Software e código-fonte</li>
-            <li>Imagens, vídeos e áudios</li>
-            <li>Personagem "Quiron" e identidade visual</li>
+            <li>📝 Textos, questões e material educacional</li>
+            <li>🎨 Logotipos, marcas e design</li>
+            <li>💻 Software e código-fonte</li>
+            <li>🖼️ Imagens, vídeos e áudios</li>
+            <li>🏛️ Personagem "Quiron" e identidade visual mitológica</li>
         </ul>
 
         <p>...é protegido por direitos autorais e outras leis de propriedade intelectual.</p>
 
         <p>Você recebe uma licença limitada, não exclusiva e intransferível para usar o aplicativo para fins pessoais e não comerciais.</p>
 
-        <h2>8. Publicidade</h2>
+        <h2>10. Sistema de Ranking e Competições</h2>
 
-        <p>O aplicativo exibe anúncios através do <strong>Google AdMob</strong>.</p>
-
-        <h3>8.1. Usuários Gratuitos</h3>
-        <p>Usuários dos planos Visitante e Freemium verão anúncios durante o uso do aplicativo.</p>
-
-        <h3>8.2. Usuários Premium</h3>
-        <p>Usuários do plano Premium têm experiência sem anúncios.</p>
-
-        <h3>8.3. Interação com Anúncios</h3>
-        <p>Ao clicar em anúncios, você pode ser redirecionado para sites de terceiros. Não somos responsáveis pelo conteúdo ou práticas de privacidade desses sites.</p>
-
-        <p>Para mais informações, consulte nossa <a href="ad-partners.html">página de Parceiros de Anúncios</a>.</p>
-
-        <h2>9. Sistema de Ranking e Competições</h2>
-
-        <h3>9.1. Ranking Geral</h3>
+        <h3>10.1. Ranking Geral</h3>
         <p>O ranking é atualizado em tempo real com base no desempenho dos usuários em quiz e atividades.</p>
 
-        <h3>9.2. Competições com Premiação</h3>
+        <h3>10.2. Competições com Premiação</h3>
         <p>Competições com premiação em dinheiro são disponíveis apenas para usuários Premium.</p>
 
         <p>Regras específicas:</p>
         <ul>
-            <li>Participantes devem ter 18 anos ou mais</li>
-            <li>CPF válido é obrigatório para recebimento de prêmios</li>
-            <li>Prêmios são pagos via PIX em até 15 dias úteis após o fim da competição</li>
-            <li>Tentativas de fraude resultam em desclassificação e banimento</li>
-            <li>Decisões sobre desempates são finais e irrevogáveis</li>
+            <li>👤 Participantes devem ter 18 anos ou mais</li>
+            <li>🆔 CPF válido é obrigatório para recebimento de prêmios</li>
+            <li>💰 Prêmios são pagos via PIX em até 15 dias úteis após o fim da competição</li>
+            <li>🚫 Tentativas de fraude resultam em desclassificação e banimento</li>
+            <li>⚖️ Decisões sobre desempates são finais e irrevogáveis</li>
         </ul>
 
-        <h3>9.3. Anti-Trapaça</h3>
+        <h3>10.3. Anti-Trapaça</h3>
         <p>Utilizamos sistemas automatizados para detectar comportamento suspeito. Contas flagradas trapaceando serão banidas permanentemente.</p>
 
-        <h2>10. Chat Prometheus (IA)</h2>
+        <h2>11. Chat Prometheus (IA)</h2>
 
         <p>O chat Prometheus é um assistente de IA para auxílio nos estudos.</p>
 
-        <h3>10.1. Limitações</h3>
+        <h3>11.1. Limitações</h3>
         <ul>
-            <li>As respostas são geradas por IA e podem conter erros</li>
-            <li>Não substituem material oficial de estudos</li>
-            <li>Não garantimos 100% de precisão</li>
-            <li>Usuários Freemium têm limite diário de mensagens</li>
+            <li>🤖 As respostas são geradas por IA e podem conter erros</li>
+            <li>📚 Não substituem material oficial de estudos</li>
+            <li>⚠️ Não garantimos 100% de precisão</li>
+            <li>⏳ Usuários Freemium têm limite de 5 mensagens por dia</li>
+            <li>♾️ Usuários Premium têm acesso ilimitado</li>
         </ul>
 
-        <h3>10.2. Uso Responsável</h3>
+        <h3>11.2. Uso Responsável</h3>
         <p>Não use o chat para:</p>
         <ul>
             <li>Solicitar ajuda em fraudes ou atividades ilegais</li>
@@ -406,19 +545,19 @@
             <li>Gerar conteúdo ofensivo ou inadequado</li>
         </ul>
 
-        <h2>11. Modificações do Serviço</h2>
+        <h2>12. Modificações do Serviço</h2>
 
         <p>Reservamo-nos o direito de:</p>
         <ul>
-            <li>Modificar, suspender ou descontinuar qualquer parte do serviço a qualquer momento</li>
-            <li>Alterar preços de assinaturas com aviso prévio de 30 dias</li>
-            <li>Adicionar ou remover funcionalidades</li>
-            <li>Realizar manutenções programadas ou emergenciais</li>
+            <li>🔧 Modificar, suspender ou descontinuar qualquer parte do serviço a qualquer momento</li>
+            <li>💰 Alterar preços de assinaturas com aviso prévio de 30 dias</li>
+            <li>✨ Adicionar ou remover funcionalidades</li>
+            <li>🛠️ Realizar manutenções programadas ou emergenciais</li>
         </ul>
 
         <p>Mudanças significativas serão comunicadas através de e-mail ou notificação no aplicativo.</p>
 
-        <h2>12. Isenção de Garantias</h2>
+        <h2>13. Isenção de Garantias</h2>
 
         <p>O SERVIÇO É FORNECIDO "COMO ESTÁ" E "CONFORME DISPONÍVEL", SEM GARANTIAS DE QUALQUER TIPO.</p>
 
@@ -430,7 +569,7 @@
             <li>Os resultados atenderão a todas as suas expectativas</li>
         </ul>
 
-        <h2>13. Limitação de Responsabilidade</h2>
+        <h2>14. Limitação de Responsabilidade</h2>
 
         <p>EM NENHUMA CIRCUNSTÂNCIA O QUIRON CONCURSOS SERÁ RESPONSÁVEL POR:</p>
         <ul>
@@ -443,7 +582,7 @@
 
         <p>Nossa responsabilidade total não excederá o valor pago por você nos últimos 12 meses.</p>
 
-        <h2>14. Indenização</h2>
+        <h2>15. Indenização</h2>
 
         <p>Você concorda em indenizar e isentar o Quiron Concursos de quaisquer reivindicações, perdas, responsabilidades, danos e despesas (incluindo honorários advocatícios) decorrentes de:</p>
         <ul>
@@ -453,16 +592,18 @@
             <li>Conteúdo que você enviar</li>
         </ul>
 
-        <h2>15. Rescisão</h2>
+        <h2>16. Rescisão e Exclusão de Conta</h2>
 
-        <h3>15.1. Por Você</h3>
+        <h3>16.1. Por Você</h3>
         <p>Você pode encerrar sua conta a qualquer momento através de:</p>
         <ul>
-            <li>Configurações → Conta → Excluir Conta</li>
-            <li>Solicitação para: <a href="mailto:suporte@quironconcursos.com.br">suporte@quironconcursos.com.br</a></li>
+            <li>📱 Configurações do App → Conta → Excluir Conta</li>
+            <li>📧 Solicitação para: <a href="mailto:quironconcursos@gmail.com">quironconcursos@gmail.com</a></li>
         </ul>
 
-        <h3>15.2. Por Nós</h3>
+        <p>Para mais detalhes sobre exclusão de dados, consulte: <a href="delete-account">Como Excluir sua Conta</a></p>
+
+        <h3>16.2. Por Nós</h3>
         <p>Podemos suspender ou encerrar sua conta se:</p>
         <ul>
             <li>Você violar estes Termos de Uso</li>
@@ -471,59 +612,70 @@
             <li>Houver suspeita de fraude ou atividade ilegal</li>
         </ul>
 
-        <h3>15.3. Efeitos da Rescisão</h3>
+        <h3>16.3. Efeitos da Rescisão</h3>
         <p>Após o encerramento da conta:</p>
         <ul>
-            <li>Você perde acesso a todo o conteúdo e serviços</li>
-            <li>Dados pessoais serão excluídos conforme Política de Privacidade</li>
-            <li>Assinaturas ativas não serão reembolsadas</li>
-            <li>Conteúdo criado por você pode ser mantido para conformidade legal</li>
+            <li>❌ Você perde acesso a todo o conteúdo e serviços</li>
+            <li>🗑️ Dados pessoais serão excluídos conforme Política de Privacidade</li>
+            <li>💳 Assinaturas ativas não serão reembolsadas (exceto período de 72h)</li>
+            <li>📝 Conteúdo criado por você pode ser mantido para conformidade legal</li>
         </ul>
 
-        <h2>16. Lei Aplicável e Jurisdição</h2>
+        <h2>17. Lei Aplicável e Jurisdição</h2>
 
         <p>Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil.</p>
 
         <p>Qualquer disputa será resolvida no foro da comarca de <strong>São Paulo, SP</strong>, com exclusão de qualquer outro, por mais privilegiado que seja.</p>
 
-        <h2>17. Alterações nos Termos</h2>
+        <h2>18. Alterações nos Termos</h2>
 
         <p>Podemos atualizar estes Termos de Uso periodicamente. Quando fizermos alterações significativas:</p>
         <ul>
-            <li>Notificaremos você por e-mail ou notificação no app</li>
-            <li>A data de "Última atualização" será modificada</li>
-            <li>Você terá 30 dias para aceitar os novos termos ou cancelar sua conta</li>
+            <li>📧 Notificaremos você por e-mail ou notificação no app</li>
+            <li>📅 A data de "Última atualização" será modificada</li>
+            <li>⏳ Você terá 30 dias para aceitar os novos termos ou cancelar sua conta</li>
         </ul>
 
         <p>O uso continuado do serviço após as alterações constitui aceitação dos novos termos.</p>
 
-        <h2>18. Disposições Gerais</h2>
+        <h2>19. Disposições Gerais</h2>
 
-        <h3>18.1. Acordo Completo</h3>
+        <h3>19.1. Acordo Completo</h3>
         <p>Estes Termos de Uso, juntamente com a Política de Privacidade, constituem o acordo completo entre você e o Quiron Concursos.</p>
 
-        <h3>18.2. Renúncia</h3>
+        <h3>19.2. Renúncia</h3>
         <p>Nossa falha em fazer cumprir qualquer direito não constitui renúncia a esse direito.</p>
 
-        <h3>18.3. Divisibilidade</h3>
+        <h3>19.3. Divisibilidade</h3>
         <p>Se qualquer cláusula for considerada inválida, as demais permanecem em pleno vigor.</p>
 
-        <h3>18.4. Cessão</h3>
+        <h3>19.4. Cessão</h3>
         <p>Você não pode transferir seus direitos sob estes termos. Podemos transferir nossos direitos a qualquer afiliado ou sucessor.</p>
 
-        <h3>18.5. Idioma</h3>
+        <h3>19.5. Idioma</h3>
         <p>A versão em português destes termos prevalece sobre traduções.</p>
 
         <div class="contact-box">
-            <h3>📧 Dúvidas sobre os Termos de Uso?</h3>
-            <p>Entre em contato conosco:</p>
-            <p><strong>E-mail de Suporte:</strong> <a href="mailto:suporte@quironconcursos.com.br">suporte@quironconcursos.com.br</a></p>
-            <p><strong>E-mail Jurídico:</strong> <a href="mailto:juridico@quironconcursos.com.br">juridico@quironconcursos.com.br</a></p>
-            <p><strong>Website:</strong> <a href="https://quironconcursos.com.br" target="_blank">https://quironconcursos.com.br</a></p>
+            <h3>📧 Entre em Contato</h3>
+            <p>Dúvidas sobre os Termos de Uso, assinatura ou reembolso?</p>
+            <p><strong>E-mail Geral:</strong> <a href="mailto:quironconcursos@gmail.com">quironconcursos@gmail.com</a></p>
+            <p><strong>Suporte Técnico:</strong> Mesmo e-mail acima</p>
+            <p><strong>Assuntos Jurídicos:</strong> Mesmo e-mail acima</p>
+            <p><strong>Reembolsos:</strong> Mesmo e-mail acima (assunto: "Solicitação de Reembolso")</p>
+            <p><strong>Cancelamento:</strong> Mesmo e-mail acima (assunto: "Cancelamento de Assinatura")</p>
+            
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 2px solid #e2e8f0;">
+                <p><strong>📄 Documentos Relacionados:</strong></p>
+                <p>
+                    • <a href="privacy-policy">Política de Privacidade</a><br>
+                    • <a href="delete-account">Como Excluir sua Conta</a><br>
+                    • <a href="ad-partners">Parceiros de Anúncios</a>
+                </p>
+            </div>
         </div>
 
         <div style="text-align: center;">
-            <a href="index.html" class="back-button">← Voltar ao Menu Principal</a>
+            <a href="index" class="back-button">← Voltar ao Menu Principal</a>
         </div>
     </div>
 </body>
