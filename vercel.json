@@ -1,54 +1,20 @@
 {
-  "version": 2,
-  "name": "quiron-policies",
-  "builds": [
-    {
-      "src": "*.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/privacy-policy",
-      "dest": "/privacy-policy.html"
-    },
-    {
-      "src": "/terms-of-service",
-      "dest": "/terms-of-service.html"
-    },
-    {
-      "src": "/delete-account",
-      "dest": "/delete-account.html"
-    },
-    {
-      "src": "/ad-partners",
-      "dest": "/ad-partners.html"
-    }
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/terms-of-service", "destination": "/terms-of-service.html" },
+    { "source": "/delete-account", "destination": "/delete-account.html" },
+    { "source": "/ad-partners", "destination": "/ad-partners.html" }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        }
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
   ]
